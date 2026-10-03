@@ -6,7 +6,7 @@
 
 ## 📁 Cấu Trúc Project
 
-```
+```raw
 SystemCheck/
 ├── SystemCheck.bat          ← Chạy chính (cần Admin)
 ├── QuickCheck.bat           ← Kiểm tra nhanh (không cần Admin)
@@ -28,8 +28,13 @@ SystemCheck/
 
 ### Kiểm tra đầy đủ:
 1. Chuột phải vào **`SystemCheck.bat`** → **"Run as administrator"**
-2. Chờ script quét xong (~30 giây)
-3. Chọn **Y** khi được hỏi để mở báo cáo HTML
+2. Chọn **1** để quét lỗi hệ thống/Event Log hoặc **2** để kiểm tra phần cứng tối đa
+3. Chờ script quét xong
+4. Chọn **Y** khi được hỏi để mở báo cáo HTML
+
+Kiểm tra phần cứng thu thập thông tin CPU, RAM, GPU, ổ đĩa, pin, thiết bị có lỗi,
+sự kiện WHEA và nhiệt độ nếu Windows cung cấp. Đây là kiểm tra chỉ đọc; khả năng
+đọc SMART và cảm biến phụ thuộc driver/phần cứng. Script không chạy stress test.
 
 ### Kiểm tra nhanh (console):
 ```bat
